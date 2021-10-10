@@ -1,4 +1,4 @@
-package comSelectCommandAndConnectionClose;
+package com.SelectCommandAndConnectionClose;
 
 //import java.sql.Connection;
 //import java.sql.DriverManager;
