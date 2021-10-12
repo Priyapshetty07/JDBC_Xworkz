@@ -1,4 +1,4 @@
-package com.laptop.DAO;
+package com.laptop.dao;
 
 import java.sql.*;
 
@@ -15,7 +15,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String insertQuery6 = "INSERT INTO laptop_details value(6,'HP',85000,'CORE I3',400)";
 
 		try {
-            Connection connection = LaptopProvider.getconnection();
+            Connection connection = LaptopConnection.getconnection();
 			Statement statement = connection.createStatement(); //to put sql query to java
 
 			statement.executeUpdate(insertQuery1);
@@ -54,7 +54,7 @@ public class LaptopDAOImpl implements LaptopDAO {
        String updateBrandAndPrice = "UPDATE Laptop.laptop_details SET BRAND='DELL',  PRIZE=56500 WHERE ID=1";
 
 		try {
-            Connection connection = LaptopProvider.getconnection();
+            Connection connection = LaptopConnection.getconnection();
 			Statement statement = connection.createStatement();
 			
 			statement.executeUpdate(updateBrandAndPrice);
@@ -71,7 +71,7 @@ public class LaptopDAOImpl implements LaptopDAO {
        String deleteQuery = "DELETE FROM Laptop.laptop_details WHERE ID=2";
 
 		try {
-            Connection connection = LaptopProvider.getconnection();
+            Connection connection = LaptopConnection.getconnection();
 			Statement statement = connection.createStatement(); //to put sql query to java
 
 			statement.executeUpdate(deleteQuery);
@@ -97,7 +97,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 
 		try {
 
-			Connection connection = LaptopProvider.getconnection();
+			Connection connection = LaptopConnection.getconnection();
 			Statement statement = connection.createStatement(); //to put sql query to java
 
 			statement.executeUpdate(updateQuery);
@@ -121,7 +121,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String readSingleRowByID = "SELECT *FROM laptop_details WHERE ID=3";
 
 		try {
-			Connection connection = LaptopProvider.getconnection();
+			Connection connection = LaptopConnection.getconnection();
 
 			Statement statement = connection.createStatement();
 
@@ -153,7 +153,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String readAllRecord = "SELECT*FROM laptop_details";
 
 		try {
-			Connection connection = LaptopProvider.getconnection();
+			Connection connection = LaptopConnection.getconnection();
 
 			Statement statement = connection.createStatement();
 
@@ -191,7 +191,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 
 		try {
 
-			Connection connection = LaptopProvider.getconnection();
+			Connection connection = LaptopConnection.getconnection();
 
 			Statement statement = connection.createStatement();
 
@@ -222,7 +222,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 
 		try {
 
-			Connection connection = LaptopProvider.getconnection();
+			Connection connection = LaptopConnection.getconnection();
 
 			Statement statement = connection.createStatement();
 
@@ -247,7 +247,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 
 		try {
 
-			Connection connection = LaptopProvider.getconnection();
+			Connection connection = LaptopConnection.getconnection();
 
 			Statement statement = connection.createStatement();
 

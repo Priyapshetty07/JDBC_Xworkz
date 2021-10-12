@@ -1,8 +1,8 @@
-package com.laptop.DAO;
+package com.laptop.dao;
 
 import java.sql.*;
 
-public class LaptopProvider {
+public class LaptopConnection {
 private static Connection connection = null;
 	
 	static {

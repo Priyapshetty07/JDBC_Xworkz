@@ -1,7 +1,7 @@
 package com.laptop.tester;
 
-import com.laptop.DAO.LaptopDAO;
-import com.laptop.DAO.LaptopDAOImpl;
+import com.laptop.dao.LaptopDAO;
+import com.laptop.dao.LaptopDAOImpl;
 
 public class LaptopTester {
 	public static void main(String args[]) {

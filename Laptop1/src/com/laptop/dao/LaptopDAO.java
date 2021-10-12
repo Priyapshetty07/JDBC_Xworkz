@@ -1,4 +1,4 @@
-package com.laptop.DAO;
+package com.laptop.dao;
 
 public interface LaptopDAO {
 	void saveLaptoprecord();
